@@ -4,11 +4,11 @@ using namespace std;
 int main() {
     int num=123456;
    
-    int sum=0;
+    int rev=0;
     while(num>0){
-       int  rem=num%10;
-       sum +=rem;
-        num=num/10;
+       int  d=num%10;
+       rev=rev*10+d;
+        num /= 10;
     }
-    cout<<sum;
+    cout<<rev;
 }
