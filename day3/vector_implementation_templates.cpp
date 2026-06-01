@@ -15,4 +15,9 @@ template <typename T1, typename T2>
 auto sum(T1 a, T2 b) {
     return a + b;
 }
+
+// auto allows each parameter to have its own deduced type
+auto sum(auto a, auto b) {
+    return a + b;
+}
 */
