@@ -13,6 +13,7 @@ int main(){
     int max_sum=sum;
     for(int i=k;i<nums.size();i++){
         sum+=nums[i]-nums[i-k];
-        maxsum
-
+        max_sum=max(max_sum,sum);
+    }
+    cout<<max_sum;
 }
