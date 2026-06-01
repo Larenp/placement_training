@@ -11,6 +11,8 @@ int main(){
 
     cout << *(arr+1) << endl; 
 
+
+
     return 0;
 }
 /* size of pinter is 8 bytes and constant throughout the program, it is not
@@ -18,3 +20,4 @@ int main(){
  s of a variable, and the size of a memory address is fixed regardless of the type of variable 
  it points to.
  */
+
