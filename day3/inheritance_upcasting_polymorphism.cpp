@@ -26,3 +26,7 @@ int main(){
  // without virtual keyword it will call parent class function instead of child class function
   return 0;
 }
+
+//Note: If u add virtual keyword in parent class then if u do upcasting also u cannot access the parent class method and it will call the child class method. This is called runtime polymorphism.
+
+//Note: with virtual keyword it becomes overloading, and without it becomes overriding
