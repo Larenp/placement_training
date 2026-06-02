@@ -6,7 +6,7 @@ using namespace std;
 
 int strleng(string orginal_string){
     int i=0; 
-    while(orginal_string[i] !='\0'){
+    while(orginal_string[i] !='\0'){ //'\0' is the null 
         i++;
     }
     return i;
