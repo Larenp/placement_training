@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <stringstream>
+#include <sstream>
 using namespace std;
 string reverse1(string s){
 stringstream ss(s);
@@ -16,6 +16,8 @@ for(int i=0;i<v.size();i++){
     cout<<v[i];
     cout<<" ";
 }
+return "";
+
 }
 int main(){
  cout<<"Enter the input string "<<endl;
