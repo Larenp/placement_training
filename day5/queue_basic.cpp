@@ -1,30 +1,35 @@
 #include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
-vector<int>queue;
+
+vector<int>queue1;
+
 int size=0;
-push_function(int val){
-    // code to push an element into the queue
-    queue.push_back(val);
+void push_function(int val){
+   
+    queue1.push_back(val);
     size++;
 }
-pop_function(){
-    queue.erase(queue.begin());
+void pop_function(){
+    queue1.erase(queue1.begin());
     size--;
     if(size<1){
         cout<<"the queue is empty";
     }
 }
-size_function(){
-    cout<<"the size is :"<<queue.size()<<endl;
+void size_function(){
+    cout<<"the size is :"<<queue1.size()<<endl;
 }
-display_function(){
-    for(int i=0;i<queue.size();q++){
-        cout<<queue[i];
+void display_function(){
+    for(int i=0;i<queue1.size();i++){
+        cout<<queue1[i]<<" ";
     }
+    cout<<endl;
 }
 
 int main(){
-    
+ 
     while(1){
         cout<<"enter your choice :"<<endl;
         cout<<"1. push an element into the queue"<<endl;
