@@ -1,4 +1,4 @@
-/*
+
 class Solution {
 public:
     int romanToInt(string s) {
@@ -22,7 +22,7 @@ public:
         }
   return ans;  }
 };
-*/
+
 /*
 class Solution {
 
