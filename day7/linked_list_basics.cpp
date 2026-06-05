@@ -40,6 +40,16 @@ void insert_at_begging(Node *head, int val){
    head = newNode;
   
 }
+void add_start(Node *head,int val){
+    Node *newNode =new Node(val);
+   newNode->next = head;
+   head = newNode;
+}
+
+void add_middle(Node *head,int val){
+    if(!head)return;
+    
+}
 
 int main()
 {
