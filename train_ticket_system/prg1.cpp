@@ -9,7 +9,7 @@ private:
     string passengerName;
     int age;
     int ticketId;
-    string status; // Confirmed or Waiting
+    string status; 
 
 public:
     Ticket(string name, int a, int id, string s)
@@ -44,7 +44,7 @@ public:
     }
 };
 
-class TicketSystem
+class TicketSystem :public Ticket
 {
 private:
     vector<Ticket> tickets;
