@@ -248,3 +248,19 @@ int main()
 
     return 0;
 }
+
+/*
+Login
+   ↓
+Book Ticket
+   ↓
+First 2 → Confirmed
+Next 3 → Waiting
+   ↓
+Cancel Confirmed Ticket
+   ↓
+First Waiting Ticket
+moves to
+Confirmed
+   ↓
+View Updated Tickets*/
