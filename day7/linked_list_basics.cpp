@@ -47,8 +47,9 @@ void add_start(Node *head,int val){
 }
 
 void add_middle(Node *head,int val){
-    if(!head)return;
     
+
+
 }
 
 int main()
