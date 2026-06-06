@@ -40,6 +40,28 @@ void insert_at_begging(Node *head, int val){
    head = newNode;
   
 }
+void delete_at_start(Node *head){
+    if(!head)return;
+    Node *temp = head;
+    head = head->next;
+    delete temp;
+
+}
+void delete_at_end(Node *head){
+    if(!head)return;
+    if(!head->next){
+        delete head;
+        head = nullptr;
+        return;
+    }
+    Node *temp = head;
+    while(temp->next->next){
+        temp = temp->next;
+    }
+    delete temp->next;
+    temp->next = nullptr;
+
+}
 void add_start(Node *head,int val){
     Node *newNode =new Node(val);
    newNode->next = head;
@@ -70,6 +92,10 @@ int main()
     insert_at_end(head,30);
     insert_at_begging(head,0);
     traversal(head);
+    delete_at_start(head);
+    traversal(head);
+    delete_at_end(head);
+    traversal(head);        
 
     return 0;
 }
