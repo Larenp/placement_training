@@ -97,6 +97,9 @@ int main()
 
     cout << "\nPostorder: ";
     postorder(root);
+    
+    cout << "\nBfs: ";
+    bfs(root);
 
     return 0;
 }
