@@ -20,6 +20,14 @@ public:
     }
 };
 /*
+
+int left=maxdepth(root->left);
+int right=maxdepth(root->left);
+int res=1+max(left,right);
+
+return res;
+*/
+/*
 maxDepth(3)
 ├── maxDepth(9)
 │   ├── maxDepth(NULL) = 0
