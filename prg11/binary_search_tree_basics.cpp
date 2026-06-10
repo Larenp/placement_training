@@ -4,6 +4,9 @@ to two children in any order, whereas a Binary Search Tree (BST)
 is an ordered binary tree that strictly requires left child values
 to be smaller and right child values to be larger than the parent node*/
 
+
+// binary search tree always inorder form
+
 #include <iostream>
 using namespace std;
 
