@@ -1,3 +1,9 @@
+/*
+Binary Tree is a general data structure where nodes can have up 
+to two children in any order, whereas a Binary Search Tree (BST) 
+is an ordered binary tree that strictly requires left child values 
+to be smaller and right child values to be larger than the parent node*/
+
 #include <iostream>
 using namespace std;
 
@@ -66,6 +72,13 @@ void inorder(Node* root) {
     inorder(root->right);     // Visit right subtree
 }
 
+void preorder(Node* root){
+     if (root == nullptr)
+        return;
+        cout<<root->data<<" ";
+        preorder(root->left);
+        preorder(root->right);
+}
 int main() {
 
     // Initially tree is empty
@@ -81,9 +94,13 @@ int main() {
     insert(root, 80);
 
     // Print BST in sorted order
-    cout << "Inorder Traversal: ";
+    cout << "Inorder Traversal: "<<endl;
     inorder(root);
-
+    cout<<endl;
+     cout << "Preorder Traversal: ";
+     cout<<endl;
+    preorder(root);
+    cout<<endl;
     // Search for a value
     cout << "\nSearch 60: ";
     cout << (search(root, 60) ? "Found" : "Not Found");
